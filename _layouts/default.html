@@ -16,9 +16,38 @@
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
 
+      <!-- ✅ Authors & Affiliations (in header) -->
+      <p style="
+        margin-top: 18px;
+        margin-bottom: 6px;
+        font-size: 18px;
+        line-height: 1.45;
+        text-align: center;
+      ">
+        <b>Jin-Ting He</b><sup>1</sup>&nbsp;&nbsp;
+        <b>Fu-Jen Tsai</b><sup>2</sup>&nbsp;&nbsp;
+        <b>Yan-Tsung Peng</b><sup>3</sup>&nbsp;&nbsp;
+        <b>Min-Hung Chen</b><sup>4</sup><br>
+        <b>Chia-Wen Lin</b><sup>2</sup>&nbsp;&nbsp;
+        <b>Yen-Yu Lin</b><sup>1</sup>
+      </p>
+
+      <p style="
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 15px;
+        line-height: 1.35;
+        text-align: center;
+      ">
+        <sup>1</sup>National Yang Ming Chiao Tung University&nbsp;&nbsp;
+        <sup>2</sup>National Tsing Hua University<br>
+        <sup>3</sup>National Chengchi University&nbsp;&nbsp;
+        <sup>4</sup>NVIDIA
+      </p>
+
       <!-- ✅ Custom icon/link bar (no "View on GitHub") -->
       {% if site.links %}
-      <p style="margin-top: 16px;">
+      <p style="margin-top: 12px;">
         {% for item in site.links %}
           <a href="{{ item.url }}" style="text-decoration: none; margin: 0 6px;" target="_blank" rel="noopener">
             <img alt="{{ item.label }}" src="{{ item.badge }}">
@@ -44,3 +73,4 @@
     </main>
   </body>
 </html>
+
