@@ -2,11 +2,8 @@ theme: jekyll-theme-cayman
 
 links:
   - label: Paper
-    url: https://arxiv.org/abs/XXXX.XXXXX
-    badge: https://img.shields.io/badge/Paper-arXiv-red?style=for-the-badge
-  - label: GitHub
-    url: https://github.com/yourname/yourrepo
-    badge: https://img.shields.io/badge/Code-GitHub-black?style=for-the-badge
-  - label: PDF
-    url: https://your-site.com/your-paper.pdf
+    url: https://arxiv.org/abs/2512.03979
     badge: https://img.shields.io/badge/Paper-PDF-blue?style=for-the-badge
+  - label: GitHub
+    url: https://github.com/Jin-Ting-He/BlurDM
+    badge: https://img.shields.io/badge/Code-GitHub-black?style=for-the-badge
