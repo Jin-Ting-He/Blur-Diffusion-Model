@@ -8,10 +8,15 @@ Diffusion models show promise for dynamic scene deblurring; however, existing st
 
 ## Results
 ![Vizs](assets/BlurDM_viz.png)
-![Results](assets/BlurDM_results.png)
+We provide qualitative comparisons of four baselines and their BlurDM-enhanced versions on the GoPro and HIDE test sets in this figure. The results show that BlurDM consistently produces sharper and more visually appealing deblurred results than "Baseline."
+![Results](assets/BlurDM_result.png)
+We compare the deblurring performance of four baselines and their BlurDM-enhanced versions, where “Baseline” and “BlurDM” refer to the deblurring performance without and with BlurDM, respectively. The results indicate that BlurDM consistently and significantly enhances deblurring performance.
 
 ## Overview
-
+![Pipeline](assets/BlurDM_teaser.png)
+We progressively add both noise and blur to a sharp image through a dual noise and blur diffusion process during forward diffusion. In the reverse process, BlurDM jointly denoises and deblurs the image, starting from Gaussian noise conditioned on the blurred input. 
+![Overview](assets/BlurDM_overview.png)
+We use BlurDM as a prior generation network to retain the diffusion model’s ability to learn high-quality, realistic image content while embedding the learned prior into the latent space of a deblurring network for effective and high-fidelity restoration.
 
 
 ## Citation
