@@ -1,7 +1,5 @@
 theme: jekyll-theme-cayman
 
-title: BlurDM: A Blur Diffusion Model for Image Deblurring (NeurIPS 2025)
-
 links:
   - label: Paper
     url: https://arxiv.org/abs/2512.03979
